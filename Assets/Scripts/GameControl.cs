@@ -9,7 +9,7 @@ public class GameControl : MonoBehaviour
     public static GameControl Instance;
     public GameObject gameOverText;
     public bool gameOver = false;
-    public float scrollSpeed = -56f;
+    public float scrollSpeed = -3f;
     public TMP_Text scoreText;
     private int score = 0;
     private AudioSource audioSource;
@@ -28,7 +28,7 @@ public class GameControl : MonoBehaviour
     void Update()
     {
         if (!gameOver)
-            scrollSpeed -= Time.deltaTime * 36f;
+            scrollSpeed -= Time.deltaTime * 0.1f;
         if (gameOver && Input.GetMouseButtonDown(0))
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         if (Input.GetKey(KeyCode.Escape)) 
