@@ -509,7 +509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1465405108}
   gameOver: 0
-  scrollSpeed: -1.5
+  scrollSpeed: -3
   scoreText: {fileID: 1829479900}
   dieClip: {fileID: 8300000, guid: ddc9f5009927b82479d69db5677721d4, type: 3}
   scoreClip: {fileID: 8300000, guid: d640c50aa90485a4186c8a18a1d491fc, type: 3}
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   columnPrefab: {fileID: 4397162102502794293, guid: 5dbde8e5bfacdfb4dbbafd84873d2d73, type: 3}
   columnPoolSize: 5
-  spawnRate: 3
+  spawnRate: 1.75
   columnMin: -2
   columnMax: 2
 --- !u!82 &711588043
@@ -1531,6 +1531,7 @@ GameObject:
   - component: {fileID: 1972026815}
   - component: {fileID: 1972026816}
   - component: {fileID: 1972026817}
+  - component: {fileID: 1972026818}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -1629,7 +1630,7 @@ Transform:
   m_GameObject: {fileID: 1972026810}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.02, y: 2.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1731,7 +1732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 616a4301972f84f40aa9c973e26b3734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 200
+  upForce: 250
   flapSFX: {fileID: 8300000, guid: 441e7f2f1ba513f4898f1fea066fba64, type: 3}
 --- !u!82 &1972026817
 AudioSource:
@@ -1830,6 +1831,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1972026818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972026810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f322f85c77c9684eb4b16c3c114c4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2060758527
 GameObject:
   m_ObjectHideFlags: 0

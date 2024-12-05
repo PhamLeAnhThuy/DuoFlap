@@ -8,14 +8,12 @@ public class Bird : MonoBehaviour
     private Animator anim;
     private AudioSource audioSource;
     public AudioClip flapSFX;
-
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
     }
-
     void Update()
     {
         HandleJump();
@@ -42,7 +40,6 @@ public class Bird : MonoBehaviour
             HandleDeath();
         }
     }
-
     private void HandleDeath()
     {
         if (isDead == true)

@@ -21,6 +21,7 @@ public class ColumnPool : MonoBehaviour
         columns = new GameObject[columnPoolSize];
         for (int i = 0; i < columnPoolSize; i++)
         {
+            // instantiate: tao gameobject moi
             columns[i] = (GameObject)Instantiate(columnPrefab, objectPoolPosition, Quaternion.identity);
         }
     }
